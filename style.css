@@ -110,7 +110,7 @@ section{
     left: 3%;
 }
 
-.parallax-home img#moon{
+.parallax-home img#moon,.about img#dessert-moon{
     mix-blend-mode: screen;
 }
 
@@ -180,4 +180,71 @@ section{
     box-shadow: 0 0 1rem #12f7ff;
     background: #1d002c;
     color: #12f7ff;
+}
+
+.projects{
+    background: #121137;
+    padding: 3rem 10%;
+}
+
+.projects h2{
+    font-size: 2rem;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.project-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card{
+    padding: 1rem;
+    border: 2px solid #12f7ff;
+    text-align: center;
+    border-radius: 25px;
+    display: block;
+    transition: all .4s ease;
+    z-index: 999;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+    margin-top: -4rem;
+    filter: drop-shadow(0 0 0.5rem #1797ff);
+}
+
+.card .project-name{
+    display: felx;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info{
+    padding-bottom: .5rem;
+}
+
+.info p{
+    padding: .5rem 0 1.5rem 0;
+}
+
+.info .btn{
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+.project-name span{
+    color: #04cf37;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
