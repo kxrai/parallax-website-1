@@ -83,18 +83,23 @@ section{
     min-height: 100vh;
 }
 
-.parallax-home{
+.parallax-home {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    overflow: hidden; /* This will ensure that any parts of the image that go beyond the container's bounds will be hidden */
 }
 
-.parallax-home img{
+.parallax-home img {
     position: absolute;
-    object-fit: cover;
-    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Using viewport width to ensure it spans the width of the viewport */
+    height: 100vh; /* Using viewport height to ensure it covers the height of the viewport */
+    object-fit: cover; /* Cover the container without losing aspect ratio */
+    pointer-events: none; /* Keep this if you want the images to not be clickable or interfere with clicking */
 }
 
 .parallax-home #text{
@@ -107,4 +112,72 @@ section{
 
 .parallax-home img#moon{
     mix-blend-mode: screen;
+}
+
+.about {
+    position: relative;
+}
+
+/* .about img{
+    position: absolute;
+    z-index: 1000;
+    object-fit: cover;
+    pointer-events: none;
+} */
+
+.about img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Image will span the full width of its parent */
+    height: 100%; /* Image will span the full height of its parent, consider changing to 'auto' if aspect ratio needs to be maintained */
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    z-index: 1000; /* Ensure the image stays behind other content; adjust as needed */
+    pointer-events: none; /* Keeps the image from interfering with user interaction */
+} 
+
+.about img.about-waterfall{
+    position: absolute;
+    top: -95px;
+}
+
+.about .info-box {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 50%; /* Adjust the width as needed */
+    z-index: 1003;
+    background: #1d002c;
+    /* padding: 20px; /* Add more padding as needed */
+    font-size: 1.2rem; /* Increase font size as needed */
+    color: #fff; Assuming you want white text color */
+}
+
+.about .info-box h2 {
+    font-size: 2.5rem; /* Adjust the value as needed */
+    margin-bottom: 1rem; /* Space below the header */
+    color: #fff; /* Example color */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.85); Optional text shadow for better readability
+}
+
+.about .info-box p{
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
+}
+
+.btn{
+    background: #12f7ff;
+    color: #1d002c;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: .5rem 1rem;
+    transition: all .3s ease;
+    border: 2px solid #12f7ff;
+    font-weight: 500;
+}
+
+.btn:hover{
+    box-shadow: 0 0 1rem #12f7ff;
+    background: #1d002c;
+    color: #12f7ff;
 }

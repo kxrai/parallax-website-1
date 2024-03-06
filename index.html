@@ -3,40 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Alicia Loi || Parallax Website </title>
+    <title>Alicia Loi || Parallax Website</title>
     <link rel="stylesheet" href="style.css">
 </head>    
 <body>
+    <!-- Header Section -->
     <header>
         <a href="#" class="logo">Logo</a>
-        <ul class="navlist">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <nav>
+            <ul class="navlist">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="parallax-home">
-        <img src="home_images/sky.png" alt="" id="">
-        <img src="home_images/moon.png" alt="" id="moon">
-        <img src="home_images/water.png" alt="" id="">
-        <img src="home_images/center-city.png" alt="" id="">
-        <img src="home_images/right-city.png" alt="" id="">
-        <img src="home_images/left-city.png" alt="" id="">
-        <img src="home_images/train.png" alt="" id="train">
-        <img src="home_images/rail.png" alt="" id="">
-        <h1 id="text">Welcome. Alicia here. </h1>
-        <img src="home_images/hill-left-1.png" alt="" id="">
-        <img src="home_images/hill-right-1.png" alt="" id="">
+    <!-- Parallax Home Section -->
+    <section id="home" class="parallax-home">
+        <!-- Images for the parallax effect -->
+        <img src="home_images/sky.png" alt="Sky" />
+        <img src="home_images/moon.png" alt="Moon" id="moon" />
+        <img src="home_images/water.png" alt="Water" />
+        <img src="home_images/center-city.png" alt="Center City" />
+        <img src="home_images/right-city.png" alt="Right City" />
+        <img src="home_images/left-city.png" alt="Left City" />
+        <img src="home_images/train.png" alt="Train" id="train" />
+        <img src="home_images/rail.png" alt="Rail" />
+        <h1 id="text">Welcome. Alicia here.</h1>
+        <img src="home_images/hill-left-1.png" alt="Hill Left" />
+        <img src="home_images/hill-right-1.png" alt="Hill Right" />
     </section>
 
-    <section class="About" id="about">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="info-box">
             <h2>About Me</h2>
+            <p>
+                Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a href="#" class="btn">More Information</a>
+        </div>
+    
+        <img src="about_images/waterfall.png" alt="" id="waterfall" class="about-waterfall">
+        <img src="about_images/desert-sky.png" alt="">
+        <img src="about_images/desert-moon.png" alt="">
+        <img src="about_images/desert-NoSky.png" alt="">
+        <img src="about_images/desert-rock.png" alt="">
+        <img src="about_images/water.png" alt="">
+        <img src="about_images/man.png" alt="">
+        <img src="about_images/grass.png" alt="">
+        <!-- Additional sections would go here -->
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+            <img src="projects/Salmon.png" alt="">
+            <div class="info">
+                <div class="project-name">
+                    <h3>Project 1</h3>
+                    <span>This is a cool project</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Integer accumsan erat libero, non condimentum metus pulvinar ac.
+                </p>
+                <a href="#" class="btn">View</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="projects/Salmon.png" alt="">
+            <div class="info">
+                <div class="project-name">
+                    <h3>Project 1</h3>
+                    <span>This is a cool project</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Integer accumsan erat libero, non condimentum metus pulvinar ac.
+                </p>
+                <a href="#" class="btn">View</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="projects/Salmon.png" alt="">
+            <div class="info">
+                <div class="project-name">
+                    <h3>Project 1</h3>
+                    <span>This is a cool project</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Integer accumsan erat libero, non condimentum metus pulvinar ac.
+                </p>
+                <a href="#" class="btn">View</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="projects/Salmon.png" alt="">
+            <div class="info">
+                <div class="project-name">
+                    <h3>Project 1</h3>
+                    <span>This is a cool project</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Integer accumsan erat libero, non condimentum metus pulvinar ac.
+                </p>
+                <a href="#" class="btn">View</a>
+            </div>
         </div>
     </section>
 
+    <!-- Link to your JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
